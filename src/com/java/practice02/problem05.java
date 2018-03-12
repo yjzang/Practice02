@@ -13,10 +13,10 @@ public class problem05 {
 
 		for (int i = 0; i < lotto.length; i++) {			//2개의 for문을 써서 lotto[i]==lotto[k] 모든 조합 비교 
 
-			for (int k = 1; k <= lotto.length; k++) {
+			for (int k = 0; k < lotto.length; k++) {
 
 				{
-					if (lotto[i] == lotto[(lotto.length - k)] && i != (lotto.length - k)) {
+					if (lotto[i] == lotto[k] && i != k) {
 
 						for (int n = 0; n < lotto.length; n++) {
 
