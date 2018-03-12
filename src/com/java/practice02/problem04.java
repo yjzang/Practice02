@@ -8,11 +8,12 @@ public class problem04 {
 
 		Scanner sc = new Scanner(System.in);
 
-		int[] unitArr = new int[10];
-		int[] countArr = new int[10];
-
+		int[] unitArr = new int[10]; 			//원 단위
+		int[] countArr = new int[10];			// 갯수
+		
+		System.out.print("금액 : ");
 		int total = sc.nextInt();
-
+		
 		unitArr[0] = 50000;
 		unitArr[1] = 10000;
 		unitArr[2] = 5000;
@@ -26,9 +27,9 @@ public class problem04 {
 
 		for (int i = 0; i < unitArr.length; i++) {
 
-			countArr[i] = total / unitArr[i];
+			countArr[i] = total / unitArr[i];     	   //  /로 나누는 연산은 몫만 남음--갯수추출
 
-			total = total - unitArr[i] * countArr[i];
+			total = total - unitArr[i] * countArr[i];   
 
 		}
 		for (int i = 0; i < unitArr.length; i++) {
